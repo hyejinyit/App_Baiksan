@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+    <!-- 메인화면 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3F3F3F"
+        android:orientation="vertical">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:scale_base_height="940"
+            app:scale_base_width="600">
+
+            <!-- 작업자 표시 -->
+            <TextView
+                android:id="@+id/worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="작업자미선택"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="20"
+                app:scale_textsize="35"
+                app:scale_top="30"
+                app:scale_width="250" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DC4C3F"
+                android:gravity="center_vertical"
+                app:scale_height="5"
+                app:scale_left="20"
+                app:scale_top="80"
+                app:scale_width="250" />
+
+            <!-- 입고처리 -->
+            <View
+                android:id="@+id/btn_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                app:scale_height="180"
+                app:scale_left="5"
+                app:scale_top="110"
+                app:scale_width="320" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/matin_icon"
+                app:scale_height="100"
+                app:scale_left="115"
+                app:scale_top="125"
+                app:scale_width="100" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="입고처리"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="5"
+                app:scale_textsize="40"
+                app:scale_top="230"
+                app:scale_width="320" />
+
+            <!-- 입고취소 -->
+            <View
+                android:id="@+id/btn_in_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_red"
+                app:scale_height="180"
+                app:scale_left="330"
+                app:scale_top="110"
+                app:scale_width="265" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rein_icon"
+                app:scale_height="100"
+                app:scale_left="410"
+                app:scale_top="125"
+                app:scale_width="100" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="입고취소"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="330"
+                app:scale_textsize="40"
+                app:scale_top="230"
+                app:scale_width="265" />
+
+            <!-- 출고관리 -->
+            <View
+                android:id="@+id/btn_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange"
+                app:scale_height="180"
+                app:scale_left="5"
+                app:scale_top="295"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/matout_icon"
+                app:scale_height="100"
+                app:scale_left="380"
+                app:scale_top="335"
+                app:scale_width="100" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="출고관리"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="25"
+                app:scale_textsize="40"
+                app:scale_top="365"
+                app:scale_width="320" />
+
+            <!-- 재고실사 -->
+            <View
+                android:id="@+id/btn_jego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue"
+                app:scale_height="180"
+                app:scale_left="5"
+                app:scale_top="480"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/matput_icon"
+                app:scale_height="100"
+                app:scale_left="130"
+                app:scale_top="520"
+                app:scale_width="100" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="재고실사"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50 "
+                app:scale_left="300"
+                app:scale_textsize="40"
+                app:scale_top="550"
+                app:scale_width="260" />
+
+            <!-- 작업자등록 -->
+            <View
+                android:id="@+id/btn_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_navy"
+                app:scale_height="180"
+                app:scale_left="5"
+                app:scale_top="665"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/as_icon"
+                app:scale_height="100"
+                app:scale_left="130"
+                app:scale_top="710"
+                app:scale_width="100" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="작업자등록"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="300"
+                app:scale_textsize="40"
+                app:scale_top="735"
+                app:scale_width="260" />
+
+            <!-- 버전/개인정보처리방침 -->
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(주)한국바코드정보기술 HIT Co., Ltd."
+                android:textColor="#ffffff"
+                app:scale_height="35"
+                app:scale_left="10"
+                app:scale_textsize="25"
+                app:scale_top="900"
+                app:scale_width="440" />
+
+            <TextView
+                android:id="@+id/verCode"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:text="Ver_22.0822"
+                android:textColor="#ffffff"
+                app:scale_height="35"
+                app:scale_left="10"
+                app:scale_textsize="27"
+                app:scale_top="865"
+                app:scale_width="190" />
+
+            <TextView
+                android:id="@+id/txtPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인정보처리방침"
+                android:textColor="#ffffff"
+                app:scale_height="35"
+                app:scale_left="200"
+                app:scale_textsize="27"
+                app:scale_top="865"
+                app:scale_width="250" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

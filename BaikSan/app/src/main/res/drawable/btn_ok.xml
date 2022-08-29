@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <!-- 확인버튼 -->
+    <!-- 평상시 -->
+<item android:state_focused="false" android:state_pressed="false">
+    <shape>
+        <corners
+            android:radius="15dp" />
+        <solid
+            android:color="#447243" />
+        <size
+            android:width="250dp"
+            android:height="50dp" />
+    </shape>
+</item>
+
+<!-- 클릭했을 때 -->
+<item android:state_focused="false" android:state_pressed="true">
+    <shape>
+        <corners
+            android:radius="15dp" />
+        <solid
+            android:color="#d5d5d5" />
+        <size
+            android:width="250dp"
+            android:height="50dp" />
+    </shape>
+</item>
+</selector>

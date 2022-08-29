@@ -1,0 +1,2 @@
+rootProject.name = "BaikSan"
+include ':app'

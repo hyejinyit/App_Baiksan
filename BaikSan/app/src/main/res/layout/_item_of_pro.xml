@@ -1,0 +1,202 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d5d5d5"
+        app:scale_base_width="620"
+        app:scale_base_height="335">
+        <!-- default bg -->
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_bg"
+            app:scale_left="5"
+            app:scale_top="1"
+            app:scale_height="320"
+            app:scale_width="610"
+            android:background="@drawable/list_box" />
+
+        <!-- selected bg -->
+        <View
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/s_layout_bg"
+            app:scale_left="5"
+            app:scale_top="1"
+            app:scale_height="320"
+            app:scale_width="610"
+            android:background="@drawable/selected_bg" />
+
+        <!-- 바코드 -->
+        <View
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:background="#BBD5BC"
+            app:scale_left="20"
+            app:scale_top="10"
+            app:scale_height="100"
+            app:scale_width="580"/>
+        <View
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            app:scale_left="30"
+            app:scale_top="50"
+            app:scale_height="20"
+            app:scale_width="20"/>
+        <TextView
+            android:id="@+id/t_barcode"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="#0054FF"
+            android:text="SOC0045294-2:001"
+            app:scale_left="55"
+            app:scale_top="10"
+            app:scale_height="100"
+            app:scale_width="390"
+            app:scale_textsize="35"/>
+
+        <!-- 재고수량 -->
+        <TextView
+            android:id="@+id/t_pqty"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/qty_box1"
+            android:textColor="#000000"
+            android:text="120M"
+            app:scale_left="450"
+            app:scale_top="20"
+            app:scale_height="80"
+            app:scale_width="140"
+            app:scale_textsize="35"/>
+
+        <!-- t_title -->
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:text="ORDER NO."
+            app:scale_left="20"
+            app:scale_top="110"
+            app:scale_height="40"
+            app:scale_width="155"
+            app:scale_textsize="27"/>
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:text="제    품    명"
+            app:scale_left="20"
+            app:scale_top="150"
+            app:scale_height="40"
+            app:scale_width="155"
+            app:scale_textsize="27"/>
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:text="거    래    처"
+            app:scale_left="20"
+            app:scale_top="190"
+            app:scale_height="40"
+            app:scale_textsize="27"
+            app:scale_width="155"/>
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:text="색 상 / 무 늬"
+            app:scale_left="20"
+            app:scale_top="230"
+            app:scale_height="40"
+            app:scale_width="155"
+            app:scale_textsize="27"/>
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#777777"
+            android:text="규            격"
+            app:scale_left="20"
+            app:scale_top="270"
+            app:scale_height="40"
+            app:scale_width="155"
+            app:scale_textsize="27"/>
+
+        <!-- t_content -->
+        <TextView
+            android:id="@+id/t_orderno"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:text="SOC0045294-2"
+            app:scale_left="180"
+            app:scale_top="110"
+            app:scale_height="40"
+            app:scale_width="420"
+            app:scale_textsize="28"/>
+        <TextView
+            android:id="@+id/t_item"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:text="PANDA SUEDE Ⅱ"
+            app:scale_left="180"
+            app:scale_top="150"
+            app:scale_height="40"
+            app:scale_width="420"
+            app:scale_textsize="28"/>
+        <TextView
+            android:id="@+id/t_buyer"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:text="FDC-HK(BSC)"
+            app:scale_left="180"
+            app:scale_top="190"
+            app:scale_height="40"
+            app:scale_width="420"
+            app:scale_textsize="28"/>
+        <TextView
+            android:id="@+id/t_color_type"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:text="A59Z/S-100"
+            app:scale_left="180"
+            app:scale_top="230"
+            app:scale_height="40"
+            app:scale_width="420"
+            app:scale_textsize="28"/>
+        <TextView
+            android:id="@+id/t_spec"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:text="(0.80±0.10mm*110cm)"
+            app:scale_left="180"
+            app:scale_top="270"
+            app:scale_height="40"
+            app:scale_width="420"
+            app:scale_textsize="28"/>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+</FrameLayout>

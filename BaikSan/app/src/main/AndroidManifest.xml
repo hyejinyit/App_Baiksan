@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kbar.baiksan">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bs_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bs_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaikSan"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 입고 및 입고취소 -->
+        <activity android:name=".In_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".In_Can_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 출고 및 출고취소-->
+        <activity android:name=".Out_sub_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Out_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Out_Del_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Out_Can_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 재고실사 -->
+        <activity android:name=".Jego_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <!-- 작업자 선택 -->
+        <activity android:name=".Set_Activity" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+
+</manifest>

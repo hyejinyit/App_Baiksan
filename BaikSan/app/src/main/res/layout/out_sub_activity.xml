@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+    <!-- 출고관리 서브메뉴  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3F3F3F"
+        android:orientation="vertical">
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:scale_base_height="980"
+            app:scale_base_width="600">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="출고관리"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:scale_height="50 "
+                app:scale_left="20"
+                app:scale_textsize="35"
+                app:scale_top="50"
+                app:scale_width="200" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#DC4C3F"
+                android:gravity="center_vertical"
+                app:scale_height="5 "
+                app:scale_left="20"
+                app:scale_top="100"
+                app:scale_width="200" />
+            <TextView
+                android:id="@+id/p_worker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/worker_box2"
+                android:gravity="center"
+                android:textColor="#000000"
+                app:scale_left="380"
+                app:scale_top="50"
+                app:scale_width="200"
+                app:scale_height="60"
+                app:scale_textsize="30"/>
+            <!-- 정상출고 -->
+            <View
+                android:id="@+id/btn_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                app:scale_height="200"
+                app:scale_left="5"
+                app:scale_top="160"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/matout_icon"
+                app:scale_height="150"
+                app:scale_left="370"
+                app:scale_top="185"
+                app:scale_width="150" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="정상출고"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50 "
+                app:scale_left="5"
+                app:scale_textsize="40"
+                app:scale_top="240"
+                app:scale_width="250" />
+
+            <!-- 주문취소출고 -->
+            <View
+                android:id="@+id/btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue"
+                app:scale_height="200"
+                app:scale_left="5"
+                app:scale_top="370"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/del"
+                app:scale_height="150"
+                app:scale_left="50"
+                app:scale_top="395"
+                app:scale_width="150" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="주문취소출고"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50"
+                app:scale_left="310"
+                app:scale_textsize="40"
+                app:scale_top="450"
+                app:scale_width="250" />
+
+            <!-- 출고취소 -->
+            <View
+                android:id="@+id/btn_out_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_red"
+                app:scale_height="200"
+                app:scale_left="5"
+                app:scale_top="580"
+                app:scale_width="590" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rein_icon"
+                app:scale_height="150"
+                app:scale_left="370"
+                app:scale_top="605"
+                app:scale_width="150" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="출고취소"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:scale_height="50 "
+                app:scale_left="5"
+                app:scale_textsize="40"
+                app:scale_top="655"
+                app:scale_width="250" />
+
+            <!-- 닫기 -->
+            <Button
+                android:id="@+id/btn_can"
+                android:background="@drawable/btn_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="닫 기"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000000"
+                app:scale_textsize="35"
+                app:scale_height="80"
+                app:scale_left="400"
+                app:scale_top="850"
+                app:scale_width="180" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

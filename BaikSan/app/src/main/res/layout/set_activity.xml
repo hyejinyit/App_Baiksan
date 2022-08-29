@@ -1,0 +1,110 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/back_bg">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:scale_base_height="880"
+        app:scale_base_width="600">
+
+     <!--   <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/applogo"
+            app:scale_height="180"
+            app:scale_left="40"
+            app:scale_width="520" />-->
+
+
+        <Spinner
+            android:id="@+id/spinW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            app:scale_height="80"
+            app:scale_left="220"
+            app:scale_textsize="40"
+            app:scale_top="420"
+            app:scale_width="340" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 작업자"
+            android:textColor="#000000"
+            app:scale_height="60"
+            app:scale_left="20"
+            app:scale_textsize="38"
+            app:scale_top="250"
+            app:scale_width="200" />
+
+
+        <Button
+            android:id="@+id/btn_can"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_can"
+            android:text="닫기"
+            app:scale_height="90"
+            app:scale_left="10"
+            app:scale_textsize="30"
+            app:scale_top="720"
+            app:scale_width="280" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_ok"
+            android:text="확인"
+            android:textColor="#ffffff"
+            app:scale_height="90"
+            app:scale_left="310"
+            app:scale_textsize="30"
+            app:scale_top="720"
+            app:scale_width="280" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작 업 자"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:scale_height="60"
+            app:scale_left="20"
+            app:scale_textsize="38"
+            app:scale_top="440"
+            app:scale_width="180" />
+
+        <TextView
+            android:id="@+id/txtworker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1d7069"
+            app:scale_height="55"
+            app:scale_left="20"
+            app:scale_textsize="38"
+            app:scale_top="320"
+            app:scale_width="500" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#c1c0bf"
+            app:scale_height="3"
+            app:scale_left="20"
+            app:scale_top="390"
+            app:scale_width="550" />
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</FrameLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- 앱이름 -->
+    <string name="app_name">백산입출고관리</string>
+    <!-- 버전 -->
+    <string name="ver_code">3</string>
+</resources>
